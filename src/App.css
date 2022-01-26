@@ -1,38 +1,111 @@
 .App {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 1300px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.xstate-logo {
+  width: 25%;
+  filter: invert(65%);
+}
+.wykop-logo {
+  width: 30%;
+}
+
+.plus {
+  font-size: 60px;
+  padding: 0 50px;
+  font-weight: 800;
+}
+
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-sentence {
+  padding:50px 0 0px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tag-input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 5px 5px;
+  font-size: 24px;
+  letter-spacing: 3px;
+  width: 200px;
+  color: rgb(102, 102, 102);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hash-tag {
+  font-size: 24px;
+  padding-right: 5px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
+  max-width:fit-content;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 2px solid rgb(247, 198, 135);
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.counter {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.single-post {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 20px 40px;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 14px 34px 0px rgba(66, 68, 90, 0.1);
+  -moz-box-shadow: 0px 14px 34px 0px rgba(66, 68, 90, 0.1);
+  box-shadow: 0px 14px 34px 0px rgba(66, 68, 90, 0.07);
+}
+
+.single-post img {
+  padding-right: 20px;
+  height: 100px;
+}
+
+.post-title {
+  color:rgb(81, 137, 173);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.post-description {
+  font-size: 16px;
+}
+
+.post-tags {
+  font-style: italic;
+}
+
+@media screen and (max-width: 1000px) {
+  .single-post img {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .logo-wrapper {
+    flex-direction: column;
+  }
+  .xstate-logo {
+    width: 200px;
+  }
+  .wykop-logo {
+    width: 250px;
   }
 }
